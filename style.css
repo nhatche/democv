@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: aquamarine;
+    background-color: #E5E5E5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body{
     border: 1px solid black;
     min-height: 1000px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -45,7 +45,7 @@ body{
 }
 
 .cv__left__img{
-    min-width: 200px;
+    min-width: 230px;
     width: 70%;
     height: 70%;
     position: relative;
@@ -57,6 +57,21 @@ body{
     color: white;
     font-size: 15px;
     padding-left: 25px;
+    margin-bottom: 40px;
+}
+
+.cv__left__text__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv__left__text__title--color-bar{
+    width: 100px;
+    height: 15px;
+    background-color: #E44E7B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .cv__left__text h3{
@@ -72,11 +87,42 @@ body{
     padding: 40px;
 }
 
+.percent{
+    margin-left: 20px;
+    width: 65%;
+    height: 10px;
+    background-color: #4C1F2D;
+    position: relative;
+    display: block;
+}
+
+.percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    background-color: #E44E7B;
+}
+
+li{
+    text-decoration: none;
+}
+
+h3 a{
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+h3 a:hover{
+    color: #E44E7B;
+    text-decoration: underline;
+    transition: .2s;
+}
 
 
-
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1160px) {
     .cv{
         margin: 10px;
         grid-template-columns: repeat(1, 1fr);
